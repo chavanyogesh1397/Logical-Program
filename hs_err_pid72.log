@@ -1,0 +1,35 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff8a95a1613, pid=72, tid=9072
+#
+# JRE version:  (15.0.1+9) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (15.0.1+9-18, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x351613]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:51700 -javaagent:C:\Users\yogesh\eclipse\java-2020-09\eclipse\configuration\org.eclipse.osgi\215\0\.cp\lib\javaagent-shaded.jar -Dfile.encoding=Cp1252 Arithmatic.Multiply_WithoutMultiplication
+
+Host: Intel(R) Core(TM)2 Duo CPU     E7600  @ 3.06GHz, 2 cores, 7G,  Windows 10 , 64 bit Build 10586 (10.0.10586.0)
+Time: Thu Apr  8 17:44:03 2021 India Standard Time elapsed time: 0.444267 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000220cbae6d70):  JavaThread "Unknown thread" [_thread_in_vm, id=9072, stack(0x000000ed88900000,0x000000ed88a00000)]
+
+Stack: [0x000000ed88900000,0x000000ed88a00000],  sp=0x000000ed889ff270,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x351613]
+V  [jvm.dll+0x62adc2]
+V  [jvm.dll+0x3512de]
+V  [jvm.dll+0x33a5d7]
+V  [jvm.dll+0x33a038]
+V  [jvm.dll+0x740894]
+V  [jvm.dll+0x73e9ba]
+V  [jvm.dll+0x3b7777]
